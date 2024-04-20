@@ -3,9 +3,12 @@
 
 -- 1. Faça uma consulta que retorna os valores máximo e mínimo de UnitCost.
 
-SELECT
-	MAX(UnitCost) AS 'Custo Máximo',
-	MIN(UnitCost) AS 'Custo Mínimo'
+-- SELECT * FROM DimProduct
+
+SELECT 
+	MIN(UnitCost) AS 'Menor Custo',
+	MAX(UnitCost) AS 'Maior Custo',
+		MIN(UnitPrice) AS 'Menor Valor',
+	MAX(UnitPrice) AS 'Maior Valor'
 FROM
 	DimProduct
-

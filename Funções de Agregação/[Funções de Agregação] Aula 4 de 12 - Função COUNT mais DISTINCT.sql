@@ -4,7 +4,8 @@
 -- 1. Faça uma consulta que retorna a contagem distinta das marcas dos produtos
 
 SELECT
-	COUNT(DISTINCT BrandName)
+	COUNT(DISTINCT ColorName) AS 'Qtde Cores Distintas',
+	COUNT(DISTINCT BrandName) AS 'Qtde Marcas Distintas'
 FROM
 	DimProduct
 
